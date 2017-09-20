@@ -5,7 +5,7 @@
    - or line after header
    - adjust spacing between profile elemets
    
-Skills: Angular 2/4, MongoDB, Expressjs, MEAN Stack, Core Java, Python, Protractor, HTML, Bootstrap, JSP, Servlets
+Skills: Angular 2/4, MongoDB, Expressjs, MEAN Stack, Core Java, Python, Git, Protractor, HTML, Bootstrap, JSP, Servlets
 
 Project:
 1) NBTY: 
