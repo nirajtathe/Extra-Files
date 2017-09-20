@@ -9,9 +9,10 @@ Skills: Angular 2/4, MongoDB, Expressjs, MEAN Stack, Core Java, Python, Protract
 
 Project:
 1) NBTY: 
-    Project Description: NBTY  is an American manufacture of vitamins and nutritional supplements which are distributed under 
-    many third party brands in the United States and internationally. Infosys is handling the active montitoring for NBTY.
-    Roles and Responsibility:
+    NBTY is an American manufacture of vitamins and nutritional supplements which are distributed under 
+    many third party brands in the United States and internationally. Infosys is handling the active montitoring and providing support for NBTY.
+    
+    Project Description:
     Developed an Angular 2 application in NBTY. The application has the ability to schedule the regular sql script execution by
     storing date, time and frequency. Application also has the capability to store the action and scenarios, this action will be taken 
     if certain scenario is hit. Action can be of two types: Email with an attachment and ServiceNow Incident creation. 
@@ -19,4 +20,9 @@ Project:
     My role was to handle the frontend using Angular.
     
 2) Servco:
-    Project Description: 
+    Servco Pacific Inc. operates automotive dealerships that sell new and pre-owned vehicles in Hawaii and Australia. It offers cars, trucks, SUVs, and vans; parts and accessories; and tires for golf carts and motorcycles, and motocross and moped tires. 
+    
+    Project Description:
+    Servco has most of the data on Oracle Cloud. To upload the data on cloud File Based Data Import (FBDI) template is used. FBDI is provided by Oracle. But there was no FBDI available to upload stock locator (inventory details) data on cloud. To overcome this problem I was assigned to create an application.
+    I have created a JFrame application using Selenium webdriver. Data is fetched from excel sheet for uploading on cloud. Login, Logout, navigation, selecting correct inventory, logging every action taken, and data upload was done through this application.
+    
