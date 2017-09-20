@@ -1,0 +1,22 @@
+- Check 
+   - font size
+   - Bordering
+   - line after every section 
+   - or line after header
+   - adjust spacing between profile elemets
+   
+Skills: Angular 2/4, MongoDB, Expressjs, MEAN Stack, Core Java, Python, Protractor, HTML, Bootstrap, JSP, Servlets
+
+Project:
+1) NBTY: 
+    Project Description: NBTY  is an American manufacture of vitamins and nutritional supplements which are distributed under 
+    many third party brands in the United States and internationally. Infosys is handling the active montitoring for NBTY.
+    Roles and Responsibility:
+    Developed an Angular 2 application in NBTY. The application has the ability to schedule the regular sql script execution by
+    storing date, time and frequency. Application also has the capability to store the action and scenarios, this action will be taken 
+    if certain scenario is hit. Action can be of two types: Email with an attachment and ServiceNow Incident creation. 
+    REST API's are created in Java and database at the backend was mysql. The scheduling was done using Quartz scheduler.
+    My role was to handle the frontend using Angular.
+    
+2) Servco:
+    Project Description: 
