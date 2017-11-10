@@ -1,0 +1,92 @@
+var express = require('express');
+var app = express();
+var soap = require('soap');
+const PORT = 3000;
+
+//var temp = require('./routes/soap.ws.js');
+
+app.get('/', function(req, res) {
+  res.send('Welcome to FBDI REST API store !!');
+  //uploadFile();
+});
+
+app.listen(PORT, function() {
+  console.log('server started on port: ' + PORT);
+});
+
+uploadFile();
+function uploadFile() {
+    var url = 'https://adc-fap0960-fin.oracledemos.com:443/publicFinancialCommonErpIntegration/ErpIntegrationService?WSDL';
+			 //https://adc-fap0960-fin.oracledemos.com:443/publicFinancialCommonErpIntegration/ErpIntegrationService
+    let request = require('request');
+    let request_with_defaults = request.defaults({
+      'proxy': 'http://10.74.91.103:80',
+      'timeout': 5000,
+      'connection': 'keep-alive'
+    });
+    let soap_client_options = {
+      'request': request_with_defaults
+    };
+    var args = {
+      requestId: '1406303' //eneter request is and check by running the program
+    };
+    soap.createClient(url, soap_client_options, function(err, client) {
+
+  	  var soapHeader = {
+  		  "Username": "fin_impl",
+  		  "Password" : "yLx95345"
+  	  };
+  	  client.addSoapHeader(soapHeader);
+
+  	  //client.setSecurity(new soap.BasicAuthSecurity('fin_impl', 'yLx95345'));
+
+  	  client.getESSJobStatus(args, function(err, result) {
+          if(err){
+      			console.log('Error occured');
+      		}
+  		      console.log(result);
+      });
+
+
+  	  /*
+  	  var tp= new Promise(function (resolve, reject) {
+
+  		client.getESSJobStatus(args, function(err, result) {
+  			if(err){
+  				reject: 'Error occured';
+  			}
+  			resolve: result;
+  		});
+
+  	  });
+
+  	  console.log(tp.resolve());
+  	  */
+    });
+}
+
+//
+// app.get('/api', function(req, res) {
+//   var soap = require('soap');
+//   var url = 'http://www.dneonline.com/calculator.asmx?WSDL';
+//
+//   let request = require('request');
+//   let request_with_defaults = request.defaults({
+//     'proxy': 'http://10.74.91.103:80',
+//     'timeout': 5000,
+//     'connection': 'keep-alive'
+//   });
+//   let soap_client_options = {
+//     'request': request_with_defaults
+//   };
+//   var args = {
+//     intA: 10,
+//     intB: 15
+//   };
+//   soap.createClient(url, soap_client_options, function(err, client) {
+//     client.Add(args, function(err, result) {
+//       res.send(result);
+//     });
+//   });
+//
+// });
