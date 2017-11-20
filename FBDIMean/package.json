@@ -1,0 +1,12 @@
+{
+  "name": "fbdimean",
+  "version": "1.0.0",
+  "author": "Niraj Tathe",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "convert-string": "^0.1.0",
+    "express": "^4.16.2",
+    "soap": "^0.23.0"
+  }
+}
